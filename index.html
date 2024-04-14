@@ -46,6 +46,16 @@
             height: 100%;
             object-fit: cover;
         }
+        .email-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -69,7 +79,8 @@
         <section class="intro">
             <h2>About Me</h2>
             <p>An active software developer. Currently work as a CS major junior student in National Chengchi University (NCCU).</p>
-            <p>Contact Me via Email: yichaowang639@gmail.com</p>
+            <button class="email-link" onclick="copyEmail()">Copy Email Address</button>
+            <input type="text" value="yichaowang639@gmail.com" id="emailAddress" style="display: none;">
         </section>
         <!-- Add your blog posts here -->
     </main>
@@ -77,5 +88,14 @@
     <footer>
         <p>&copy; 2024 My Blog. All rights reserved.</p>
     </footer>
+
+    <script>
+        function copyEmail() {
+            var email = document.getElementById("emailAddress");
+            email.select();
+            document.execCommand("copy");
+            alert("Email address copied to clipboard: " + email.value);
+        }
+    </script>
 </body>
 </html>
