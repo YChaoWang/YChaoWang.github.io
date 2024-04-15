@@ -15,7 +15,7 @@ deploy:
   type: git
   repo: 
     github: git@github.com:YChaoWang/YChaoWang.github.io.git
-  branch: gh-pages # 儲存庫分支
+  branch: main # 儲存庫分支
   message: "First Commit" # Commit 訊息
 
 # URL
