@@ -15,6 +15,8 @@ deploy:
   type: git
   repo: 
     github: git@github.com:YChaoWang/YChaoWang.github.io.git
+  branch: gh-pages # 儲存庫分支
+  message: "First Commit" # Commit 訊息
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
