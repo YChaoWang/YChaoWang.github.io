@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+    <style>
+        .icon {
+            margin-right: 20px; /*icon margin*/
+        }
+        .github-icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .github-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .linkedin-icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .linkedin-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .instagram-icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .instagram-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .email-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to YiChaoWang's Blog</h1>
+    </header>
+
+    <nav>
+        <a href="https://github.com/YChaoWang" class="github-icon icon">
+            <img src="images/githubicon.jpeg" alt="GitHub Icon">
+        </a>
+        <a href="https://www.linkedin.com/in/david-wang712" class="linkedin-icon icon">
+            <img src="images/linkedinicon.png" alt="LinkedIn Icon">
+        </a>
+        <a href="https://www.instagram.com/ychao0712/" class="instagram-icon icon">
+            <img src="images/Instagramicon.jpeg" alt="Instagram Icon">
+        </a>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>About Me</h2>
+            <p>An active software developer. Currently work as a CS major junior student in National Chengchi University (NCCU).</p>
+            <button class="email-link" onclick="copyEmail()"><span>email: yichaowang639@gmail.com</span>
+            </button>
+            <input type="text" value="yichaowang639@gmail.com" id="emailAddress" style="display: none;">
+        </section>
+        <!-- Add your blog posts here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            var email = document.getElementById("emailAddress");
+            email.select();
+            document.execCommand("copy");
+            alert("Email address copied to clipboard: " + email.value);
+        }
+    </script>
+</body>
+</html>
